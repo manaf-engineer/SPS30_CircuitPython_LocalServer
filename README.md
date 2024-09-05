@@ -10,7 +10,6 @@ Proyek ini bertujuan untuk memantau konsentrasi partikel udara (PM2.5) secara re
 - **HTTP GET**: Data dikirim melalui HTTP GET request menggunakan ESP32 dan CircuitPython.
 
 ## Persyaratan Hardware
-- Raspberry Pi Zero 2W
 - Sensor PM2.5 (SPS30) dari Sensirion
 - Modul ESP32 dengan dukungan WiFi
 - Kabel dan konektor I2C
