@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Particle Monitoring</title>
+
+    <!-- panggil file bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/mdb.min.js"></script>
+    <script src="jquery-latest.js"></script>
+
+    <!-- memanggil data grafik -->
+    <script>
+      var refreshid = setInterval(() => {
+        $("#responsecontainer").load("data.php");
+      }, 5000);
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- tempat untuk header di web -->
+    </header>
+
+    <nav>
+      <!-- tempat untuk navigasi -->
+    </nav>
+
+    <main>
+      <!-- untuk konten utama -->
+      <!-- tempat untuk tampilan grafik -->
+      <div class="container" style="text-align: center">
+        <h2>~Realtime Sensor Graphics~</h2>
+        <p>(Data Displayed is Last of 50 Stored Data in Database)</p>
+      </div>
+
+      <!-- div untuk grafik -->
+      <div class="container">
+        <div
+          class="container"
+          id="responsecontainer"
+          style="width: 90%; text-align: center"
+        ></div>
+      </div>
+
+      <!-- div untuk menampilkan gambar -->
+      <div class="container" style="text-align: center">
+        <img src="assets/img/umy_banner.jpg" width="87%" height="auto" />
+      </div>
+
+      <footer>
+        <!-- tempat untuk footer -->
+      </footer>
+    </main>
+  </body>
+</html>
